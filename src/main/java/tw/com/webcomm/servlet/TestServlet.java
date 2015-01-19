@@ -27,7 +27,8 @@ public class TestServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		PrintWriter print = response.getWriter();
-		print.print("ด๚ธี!!!!!");
+		print.print("<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'></head>");
+		print.print("Testing!!!!!");
 	}
 
 	/**
